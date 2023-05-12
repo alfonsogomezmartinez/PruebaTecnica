@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.5)
+project(PruebaTecnicaIkerlan)
+set (CMAKE_CXX_STANDARD 11)
+
+message("Comienza el test")
+file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
+add_subdirectory(lib/googletest)
+enable_testing()
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+add_executable(runUnitTests ${TEST_SRC_FILES} src/Bloque1.cpp)
+target_link_libraries(runUnitTests gtest gtest_main)
+add_test(UnitTests runUnitTests)

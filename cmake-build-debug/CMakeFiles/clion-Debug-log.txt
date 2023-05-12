@@ -1,0 +1,5 @@
+/home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/ninja/linux/x64/ninja -G Ninja -S /home/alfonso/Escritorio/PruebaTecnicaIkerlan -B /home/alfonso/Escritorio/PruebaTecnicaIkerlan/cmake-build-debug
+Comienza el test
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/alfonso/Escritorio/PruebaTecnicaIkerlan/cmake-build-debug
