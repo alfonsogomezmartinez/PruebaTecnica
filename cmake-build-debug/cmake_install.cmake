@@ -1,4 +1,4 @@
-# Install script for directory: /home/alfonso/Escritorio/PruebaTecnicaIkerlan
+# Install script for directory: /home/alfonso/Escritorio/PruebaTecnica
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/alfonso/Escritorio/PruebaTecnicaIkerlan/cmake-build-debug/lib/googletest/cmake_install.cmake")
+  include("/home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/alfonso/Escritorio/PruebaTecnicaIkerlan/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
