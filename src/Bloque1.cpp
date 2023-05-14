@@ -92,7 +92,7 @@ char findKey(const string& in) {
             xoredBytes.push_back(xoredByte);
         }
 
-        // Calcula el puntaje para el resultado actual
+        // Calcular la puntuación para el resultado actual
         float score = 0.0;
         for (const auto& byte : xoredBytes) {
             char c = static_cast<char>(byte);
