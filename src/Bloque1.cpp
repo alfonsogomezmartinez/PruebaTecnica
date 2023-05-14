@@ -1,7 +1,8 @@
 #include "Bloque1.hpp"
 #include <iostream>
+#include <map>
 
-vector<unsigned char> StringHexToBytes(string hexString){
+vector<unsigned char> StringHexToBytes(const string& hexString){
     vector<unsigned char> bytes;
 
     // Convierte en bytes de base 16
@@ -13,7 +14,7 @@ vector<unsigned char> StringHexToBytes(string hexString){
     return bytes;
 }
 
-string BytesToStringHex(vector<unsigned char> bytes){
+string BytesToStringHex(const vector<unsigned char>& bytes){
     string hexString;
     const string hexChars = "0123456789abcdef";
 
@@ -25,7 +26,7 @@ string BytesToStringHex(vector<unsigned char> bytes){
     return hexString;
 }
 
-string BytesToStringBase64(vector<unsigned char> bytes){
+string BytesToStringBase64(const vector<unsigned char>& bytes){
     string base64String;
     const string base64Chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
@@ -46,21 +47,23 @@ string BytesToStringBase64(vector<unsigned char> bytes){
     return base64String;
 }
 
-string StringHexToStringBase64(string hexString) {
+string StringHexToStringBase64(const string& hexString) {
     vector<unsigned char> bytes = StringHexToBytes(hexString);
     string base64String = BytesToStringBase64(bytes);
 
     return base64String;
 }
 
-string XORBuffers(string in1, string in2) {
-    try{
-        if (in1.length() != in2.length()){
-            string typeError = "Los parametros de entrada no tienen la misma longitud";
-            throw typeError;
+string XORBuffers(const string& in1, const string& in2, bool CS) {
+    if (CS){
+        try{
+            if (in1.length() != in2.length()){
+                string typeError = "Los parametros de entrada no tienen la misma longitud";
+                throw typeError;
+            }
+        } catch (const string& typeError) {
+            cout << "Error: " << typeError << endl;
         }
-    } catch (const string& typeError) {
-        cout << "Error: " << typeError << endl;
     }
 
     vector<unsigned char> aux;
@@ -73,4 +76,39 @@ string XORBuffers(string in1, string in2) {
     string result = BytesToStringHex(aux);
 
     return result;
+}
+
+char findKey(const string& in) {
+    string letterFrequency = "etaoin shrdlu";
+    char key = 0;
+    int maxScore = 0;
+    vector<unsigned char> bytes = StringHexToBytes(in);
+
+    for (int i = 0; i < 256; ++i) {
+        string xoredBytes;
+
+        for (const auto& byte : bytes) {
+            unsigned char xoredByte = byte ^ i;
+            xoredBytes.push_back(xoredByte);
+        }
+
+        // Calcula el puntaje para el resultado actual
+        float score = 0.0;
+        for (const auto& byte : xoredBytes) {
+            char c = static_cast<char>(byte);
+
+            // Verifica si el carácter está en la tabla de frecuencia de letras
+            auto it = letterFrequency.find(tolower(c));
+            if (it != -1)
+                score ++;
+        }
+
+        // Actualiza la clave y la puntuación máxima si es necesario
+        if (score > maxScore) {
+            maxScore = score;
+            key = static_cast<char>(i);
+        }
+    }
+
+    return key;
 }

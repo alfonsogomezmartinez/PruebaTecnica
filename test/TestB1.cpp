@@ -13,3 +13,9 @@ TEST(Ejercicio2, Bloque1){
     string out = "746865206b696420646f6e277420706c6179";
     EXPECT_EQ(out, XORBuffers(in1, in2));
 }
+
+TEST(Ejercicio3, Bloque1){
+    string in = "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736";
+    char out = 'X';
+    EXPECT_EQ(out, findKey(in));
+}
