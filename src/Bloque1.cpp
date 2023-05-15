@@ -1,5 +1,6 @@
 #include "Bloque1.hpp"
 #include <iostream>
+#include <fstream>
 #include <map>
 
 vector<unsigned char> StringHexToBytes(const string& hexString){
@@ -54,16 +55,14 @@ string StringHexToStringBase64(const string& hexString) {
     return base64String;
 }
 
-string XORBuffers(const string& in1, const string& in2, bool CS) {
-    if (CS){
-        try{
-            if (in1.length() != in2.length()){
-                string typeError = "Los parametros de entrada no tienen la misma longitud";
-                throw typeError;
-            }
-        } catch (const string& typeError) {
-            cout << "Error: " << typeError << endl;
+string XORBuffers(const string& in1, const string& in2) {
+    try{
+        if (in1.length() != in2.length()){
+            string typeError = "Los parametros de entrada no tienen la misma longitud";
+            throw typeError;
         }
+    } catch (const string& typeError) {
+        cout << "Error: " << typeError << endl;
     }
 
     vector<unsigned char> aux;
@@ -78,30 +77,45 @@ string XORBuffers(const string& in1, const string& in2, bool CS) {
     return result;
 }
 
-char findKey(const string& in) {
+string XORCharacter(const vector<unsigned char>& bytes, int i){
+    string xoredBytes;
+
+    for (const auto& byte : bytes) {
+        unsigned char xoredByte = byte ^ i;
+        xoredBytes.push_back(xoredByte);
+    }
+
+    return xoredBytes;
+}
+
+int ScoreEnglish(const string& in){
     string letterFrequency = "etaoin shrdlu";
+    int score = 0;
+
+    for (const auto& byte : in) {
+        char c = static_cast<char>(byte);
+
+        // Verifica si el carácter está en la tabla de frecuencia de letras
+        auto it = letterFrequency.find(tolower(c));
+        if (it != -1)
+            score ++;
+    }
+
+    return score;
+}
+
+char FindKey(const string& in) {
     char key = 0;
     int maxScore = 0;
     vector<unsigned char> bytes = StringHexToBytes(in);
 
-    for (int i = 0; i < 256; ++i) {
-        string xoredBytes;
 
-        for (const auto& byte : bytes) {
-            unsigned char xoredByte = byte ^ i;
-            xoredBytes.push_back(xoredByte);
-        }
+    for (int i = 0; i < 256; ++i) {
+
+        string xoredBytes = XORCharacter(bytes, i);
 
         // Calcular la puntuación para el resultado actual
-        float score = 0.0;
-        for (const auto& byte : xoredBytes) {
-            char c = static_cast<char>(byte);
-
-            // Verifica si el carácter está en la tabla de frecuencia de letras
-            auto it = letterFrequency.find(tolower(c));
-            if (it != -1)
-                score ++;
-        }
+        int score = ScoreEnglish(xoredBytes);
 
         // Actualiza la clave y la puntuación máxima si es necesario
         if (score > maxScore) {
@@ -111,4 +125,50 @@ char findKey(const string& in) {
     }
 
     return key;
+}
+
+string FindKeyFile(const string& fileName){
+    ifstream file(fileName);
+
+    try{
+        if (!file.is_open()){
+            string typeError = "No se pudo abrir el archivo: " + fileName;
+            throw typeError;
+        }
+    } catch (const string& typeError) {
+        cout << "Error: " << typeError << endl;
+    }
+
+    string key;
+    string hexLine;
+    int maxScore = 0;
+    int score;
+
+    while (getline(file, hexLine)) {
+        vector<unsigned char> bytes = StringHexToBytes(hexLine);
+
+        for (int i = 0; i < 256; ++i) {
+            string aux = XORCharacter(bytes, i);
+            score = ScoreEnglish(aux);
+            if (score > maxScore) {
+                maxScore = score;
+                key = aux;
+            }
+        }
+    }
+    file.close();
+
+    return key;
+}
+
+string RepeatingKeyXOR(const string& in, const string& key){
+    vector<unsigned char> ciphertextBytes;
+    unsigned char encryptedByte;
+
+    for (int i = 0; i < in.length(); ++i) {
+        encryptedByte =  in[i] ^ key[i % key.length()];
+        ciphertextBytes.push_back(encryptedByte);
+    }
+
+    return BytesToStringHex(ciphertextBytes);
 }

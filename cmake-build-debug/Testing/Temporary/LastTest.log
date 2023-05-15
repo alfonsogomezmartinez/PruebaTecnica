@@ -1,14 +1,14 @@
-Start testing: May 14 22:27 CEST
+Start testing: May 15 21:22 CEST
 ----------------------------------------------------------
 1/1 Testing: UnitTests
 1/1 Test: UnitTests
 Command: "/home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/runUnitTests"
 Directory: /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug
-"UnitTests" start time: May 14 22:27 CEST
+"UnitTests" start time: May 15 21:22 CEST
 Output:
 ----------------------------------------------------------
 Running main() from /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/src/gtest_main.cc
-[==========] Running 3 tests from 3 test suites.
+[==========] Running 5 tests from 5 test suites.
 [----------] Global test environment set-up.
 [----------] 1 test from Ejercicio1
 [ RUN      ] Ejercicio1.Bloque1
@@ -25,15 +25,25 @@ Running main() from /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/google
 [       OK ] Ejercicio3.Bloque1 (0 ms)
 [----------] 1 test from Ejercicio3 (0 ms total)
 
+[----------] 1 test from Ejercicio4
+[ RUN      ] Ejercicio4.Bloque1
+[       OK ] Ejercicio4.Bloque1 (272 ms)
+[----------] 1 test from Ejercicio4 (288 ms total)
+
+[----------] 1 test from Ejercicio5
+[ RUN      ] Ejercicio5.Bloque1
+[       OK ] Ejercicio5.Bloque1 (0 ms)
+[----------] 1 test from Ejercicio5 (0 ms total)
+
 [----------] Global test environment tear-down
-[==========] 3 tests from 3 test suites ran. (4 ms total)
-[  PASSED  ] 3 tests.
+[==========] 5 tests from 5 test suites ran. (297 ms total)
+[  PASSED  ] 5 tests.
 <end of output>
-Test time =   0.02 sec
+Test time =   0.32 sec
 ----------------------------------------------------------
 Test Passed.
-"UnitTests" end time: May 14 22:27 CEST
+"UnitTests" end time: May 15 21:22 CEST
 "UnitTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 14 22:27 CEST
+End testing: May 15 21:22 CEST
