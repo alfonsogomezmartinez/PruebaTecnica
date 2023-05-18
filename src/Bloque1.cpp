@@ -241,19 +241,59 @@ string base64FileDecryptAES128ECB(const string& fileName, const string& key){
     return decrypted_data;
 }
 
-bool compareFile(const string& nombreArchivo1, const string& nombreArchivo2) {
-    ifstream archivo1(nombreArchivo1);
-    ifstream archivo2(nombreArchivo2);
-    string contenidoArchivo1, contenidoArchivo2;
+bool compareFile(const string& filename1, const string& filename2) {
+    ifstream file1(filename1);
+    ifstream file2(filename2);
+    string datafile1, datafile2;
 
-    if (archivo1.is_open() && archivo2.is_open()) {
-        getline(archivo1, contenidoArchivo1, '\0');
-        getline(archivo2, contenidoArchivo2, '\0');
-        archivo1.close();
-        archivo2.close();
+    if (file1.is_open() && file2.is_open()) {
+        getline(file1, datafile1, '\0');
+        getline(file2, datafile2, '\0');
+        file1.close();
+        file2.close();
 
-        return contenidoArchivo1 == contenidoArchivo2;
+        return datafile1 == datafile2;
     }
 
     return false;
+}
+
+pair<int, int> detectECBBlock(const string& ciphertext) {
+    // Divide el texto cifrado en bloques de 16 bytes
+    int numBlocks = ciphertext.length() / 16;
+
+    // Verifica si hay bloques idénticos en el texto cifrado
+    for (int i = 0; i < numBlocks - 1; ++i) {
+        string block1 = ciphertext.substr(i * 16, 16);
+        for (int j = i + 1; j < numBlocks; ++j) {
+            string block2 = ciphertext.substr(j * 16, 16);
+            if (block1 == block2)
+                return make_pair(i, j); // Se encontraron bloques idénticos, probablemente se usa el modo ECB
+        }
+    }
+
+    return make_pair(-1, -1);  // No se encontraron bloques idénticos, probablemente se usa el modo CBC
+}
+
+pair<int, int> analyseFileDtectECBBlock(const string& fileName){
+    ifstream file(fileName);
+
+    try{
+        if (!file.is_open()){
+            string typeError = "No se pudo abrir el archivo: " + fileName;
+            throw typeError;
+        }
+    } catch (const string& typeError) {
+        cout << "Error: " << typeError << endl;
+    }
+
+    string hexLine, hex_encoded_data;
+
+    while (getline(file, hexLine))
+        hex_encoded_data.append(hexLine);
+
+    vector<unsigned char> bytes = StringHexToBytes(hex_encoded_data);
+    string decoded_data = string(bytes.begin(), bytes.end());
+
+    return detectECBBlock(decoded_data);
 }

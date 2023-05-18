@@ -78,3 +78,107 @@ string FileEncryptAES128CBC(const string& fileName, const string& key, const str
 
     return crypted_data;
 }
+
+string aes_ecb_encrypt(const string& plaintext, const string& key) {
+    EVP_CIPHER_CTX* ctx = EVP_CIPHER_CTX_new();
+    EVP_EncryptInit_ex(ctx, EVP_aes_128_ecb(), nullptr, (unsigned char*)key.c_str(), nullptr);
+
+    int encrypted_length = 0;
+    int total_encrypted_length = 0;
+    string encrypted_data(plaintext.size() + AES_BLOCK_SIZE, '\0');
+
+    EVP_EncryptUpdate(ctx, (unsigned char*)encrypted_data.data(), &encrypted_length, (unsigned char*)plaintext.data(), plaintext.size());
+    total_encrypted_length += encrypted_length;
+
+    EVP_EncryptFinal_ex(ctx, (unsigned char*)encrypted_data.data() + total_encrypted_length, &encrypted_length);
+    total_encrypted_length += encrypted_length;
+
+    EVP_CIPHER_CTX_free(ctx);
+    encrypted_data.resize(total_encrypted_length);
+
+    return encrypted_data;
+}
+
+string generateRandomKey() {
+    unsigned char key[16];
+
+    if (RAND_bytes(key, sizeof(key)) != 1) {
+        cerr << "Error generating random key\n";
+        exit(1);
+    }
+
+    return string(reinterpret_cast<const char *>(key), sizeof(key));
+}
+
+string generateRandomByte(const int& size){
+    unsigned char byte[size];
+
+    if (RAND_bytes(byte, sizeof(byte)) != 1) {
+        cerr << "Error generating random key\n";
+        exit(1);
+    }
+
+    return string(reinterpret_cast<const char *>(byte), sizeof(byte));
+}
+
+pair<string, bool> encryptionOracle(const string& input) {
+    string key = generateRandomKey();
+    int prefixSize = rand() % 6 + 5;
+    int suffixSize = rand() % 6 + 5;
+
+    string text = generateRandomByte(prefixSize) + input + generateRandomByte(suffixSize);
+    string ciphertext;
+
+    pair<string, bool> out;
+    // Se decide cual cifrado se usa
+    if (rand()%2 == 0){
+        // Usa ECB
+        ciphertext = aes_ecb_encrypt(text, key);
+        out.second = true;
+    } else {
+        // Usa CBC con iv aleatorio
+        string iv = generateRandomKey();
+        ciphertext = aes_cbc_encrypt(text, key, iv);
+        out.second = false;
+    }
+    out.first = ciphertext;
+
+    return out;
+}
+
+bool detectBlockCipherMode(const std::string& ciphertext) {
+    // Divide el texto cifrado en bloques de 16 bytes
+    int numBlocks = ciphertext.length() / 16;
+
+    // Verifica si hay bloques idénticos en el texto cifrado
+    for (int i = 0; i < numBlocks - 1; ++i) {
+        std::string block1 = ciphertext.substr(i * 16, 16);
+        for (int j = i + 1; j < numBlocks; ++j) {
+            std::string block2 = ciphertext.substr(j * 16, 16);
+            if (block1 == block2)
+                return true;  // Se encontraron bloques idénticos, probablemente se usa el modo ECB
+        }
+    }
+
+    return false;  // No se encontraron bloques idénticos, probablemente se usa el modo CBC
+}
+
+pair<string, bool> fileTestB2E3(const string& filename){
+    ifstream file(filename);
+
+    try{
+        if (!file.is_open()){
+            string typeError = "No se pudo abrir el archivo: " + filename;
+            throw typeError;
+        }
+    } catch (const string& typeError) {
+        cout << "Error: " << typeError << endl;
+    }
+
+    string line, data;
+
+    while (getline(file, line))
+        data.append(line);
+
+    return encryptionOracle(data);
+}
