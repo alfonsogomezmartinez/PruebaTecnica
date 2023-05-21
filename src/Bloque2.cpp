@@ -146,17 +146,16 @@ pair<string, bool> encryptionOracle(const string& input) {
     return out;
 }
 
-bool detectBlockCipherMode(const std::string& ciphertext) {
+bool detectBlockCipherMode(const string& ciphertext) {
     // Divide el texto cifrado en bloques de 16 bytes
     int numBlocks = ciphertext.length() / 16;
-
+    const int BLOCK_SIZE = 16;
     // Verifica si hay bloques idénticos en el texto cifrado
-    for (int i = 0; i < numBlocks - 1; ++i) {
-        std::string block1 = ciphertext.substr(i * 16, 16);
-        for (int j = i + 1; j < numBlocks; ++j) {
-            std::string block2 = ciphertext.substr(j * 16, 16);
-            if (block1 == block2)
-                return true;  // Se encontraron bloques idénticos, probablemente se usa el modo ECB
+    for (int i = 0; i < ciphertext.length(); i += BLOCK_SIZE) {
+        for (int j = i + BLOCK_SIZE; j < ciphertext.length(); j += BLOCK_SIZE) {
+            if (ciphertext.substr(i, BLOCK_SIZE) == ciphertext.substr(j, BLOCK_SIZE)) {
+                return true;
+            }
         }
     }
 
@@ -182,3 +181,100 @@ pair<string, bool> fileTestB2E3(const string& filename){
 
     return encryptionOracle(data);
 }
+
+string ecbencryptmyystringfile(const string& filename, const string& mystring, const string& key){
+    ifstream file(filename);
+
+    try{
+        if (!file.is_open()){
+            string typeError = "No se pudo abrir el archivo: " + filename;
+            throw typeError;
+        }
+    } catch (const string& typeError) {
+        cout << "Error: " << typeError << endl;
+    }
+
+    string line, data;
+
+    while (getline(file, line))
+        data.append(line);
+
+    string base64Decode = base64_decode(data);
+    string out = aes_ecb_encrypt(mystring + base64Decode, key);
+    return out;
+}
+
+map<string, string> parsingRoutine(const string& input) {
+    map<string, string> keyValueMap;
+    size_t pos = 0;
+    while (pos < input.length()) {
+        size_t equalsPos = input.find('=', pos);
+        size_t ampersandPos = input.find('&', pos);
+        // string::npos hace referencia a cuando no se encuentra un valor
+        if (equalsPos != string::npos && ampersandPos != string::npos && equalsPos < ampersandPos) {
+            string key = input.substr(pos, equalsPos - pos);
+            string value = input.substr(equalsPos + 1, ampersandPos - equalsPos - 1);
+            keyValueMap[key] = value;
+            pos = ampersandPos + 1;
+        } else if (equalsPos != string::npos && (ampersandPos == string::npos || equalsPos < ampersandPos)) {
+            string key = input.substr(pos, equalsPos - pos);
+            string value = input.substr(equalsPos + 1);
+            keyValueMap[key] = value;
+            break;
+        } else
+            break;
+    }
+
+    return keyValueMap;
+}
+
+string profileFor(const string& email) {
+    string sanitizedEmail;
+
+    for (char c : email) {
+        if (c == '&' || c == '=')
+            continue; // Skip metacaracteres
+        sanitizedEmail += c;
+    }
+
+    return "email=" + sanitizedEmail + "&uid=10&role=user";
+}
+
+string createAdminProfile(const string& email) {
+    string encoded = profileFor(email);
+    string key = generateRandomKey();
+    string ciphertext = aes_ecb_encrypt(encoded, key);
+    string cut_block = aes_ecb_encrypt("admin", key);
+    string newciphertext = ciphertext.substr(0,ciphertext.size()-16) + cut_block;
+    string sol = aes_ecb_decrypt(newciphertext, key);
+
+    return sol;
+}
+
+int getBlockSize(const string& filename, const string& key) {
+    string plaintext = "A";
+    int initialLength = ecbencryptmyystringfile(filename, plaintext, key).length();
+
+    int blockSize = 0;
+    while (blockSize == 0) {
+        plaintext += "A";
+        int newLength = ecbencryptmyystringfile(filename, plaintext, key).length();
+        if (newLength > initialLength)
+            blockSize = newLength-initialLength;
+    }
+
+    return blockSize;
+}
+
+/*string attack_bit(int blockSize) {
+    string dictionary;
+    string inputBlock(blockSize - 1, 'A'); // Bloque de entrada con un byte menos
+
+    // Generar diccionario de todos los posibles últimos bytes
+    for (int c = 0; c <= 255; ++c) {
+        dictionary = inputBlock + static_cast<char>(c);
+        cout << dictionary << endl;
+    }
+
+    return dictionary;
+}*/

@@ -1,11 +1,11 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ZxMCoS
+Change Dir: /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-45mTjh
 
-Run Build Command(s):/home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/ninja/linux/x64/ninja cmTC_c8cc8 && [1/2] Building C object CMakeFiles/cmTC_c8cc8.dir/src.c.o
-[2/2] Linking C executable cmTC_c8cc8
-FAILED: cmTC_c8cc8 
-: && /usr/bin/cc   CMakeFiles/cmTC_c8cc8.dir/src.c.o -o cmTC_c8cc8   && :
-CMakeFiles/cmTC_c8cc8.dir/src.c.o: En la función `main':
+Run Build Command(s):/home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/ninja/linux/x64/ninja cmTC_f49b1 && [1/2] Building C object CMakeFiles/cmTC_f49b1.dir/src.c.o
+[2/2] Linking C executable cmTC_f49b1
+FAILED: cmTC_f49b1 
+: && /usr/bin/cc   CMakeFiles/cmTC_f49b1.dir/src.c.o -o cmTC_f49b1   && :
+CMakeFiles/cmTC_f49b1.dir/src.c.o: En la función `main':
 src.c:(.text+0x3e): referencia a `pthread_create' sin definir
 src.c:(.text+0x4a): referencia a `pthread_detach' sin definir
 src.c:(.text+0x56): referencia a `pthread_cancel' sin definir
@@ -38,12 +38,12 @@ int main(void)
 
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uDppre
+Change Dir: /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zQNeIK
 
-Run Build Command(s):/home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/ninja/linux/x64/ninja cmTC_e3a5f && [1/2] Building C object CMakeFiles/cmTC_e3a5f.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_e3a5f
-FAILED: cmTC_e3a5f 
-: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_e3a5f.dir/CheckFunctionExists.c.o -o cmTC_e3a5f  -lpthreads && :
+Run Build Command(s):/home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/ninja/linux/x64/ninja cmTC_47b79 && [1/2] Building C object CMakeFiles/cmTC_47b79.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_47b79
+FAILED: cmTC_47b79 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_47b79.dir/CheckFunctionExists.c.o -o cmTC_47b79  -lpthreads && :
 /usr/bin/ld: no se puede encontrar -lpthreads
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.

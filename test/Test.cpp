@@ -99,3 +99,10 @@ TEST(Bloque2, Ejercicio3){
 
     EXPECT_EQ(detectBlockCipherMode(out.first), out.second);
 }
+
+TEST(Bloque2, Ejercicio5){
+    string in = "eeeeeeeeeeeemail@attacker.com";
+    string out = "email=eeeeeeeeeeeemail@attacker.com&uid=10&role=admin";
+
+    EXPECT_EQ(out, createAdminProfile(in));
+}

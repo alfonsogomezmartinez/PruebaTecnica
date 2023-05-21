@@ -92,7 +92,7 @@ build runUnitTests: CXX_EXECUTABLE_LINKER__runUnitTests_Debug CMakeFiles/runUnit
 # Utility command for test
 
 build CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -104,7 +104,7 @@ build test: phony CMakeFiles/test.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -115,7 +115,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/alfonso/Escritorio/PruebaTecnica -B/home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/alfonso/Escritorio/PruebaTecnica -B/home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -133,7 +133,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -145,7 +145,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -157,7 +157,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -174,7 +174,7 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for test
 
 build lib/googletest/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -186,7 +186,7 @@ build lib/googletest/test: phony lib/googletest/CMakeFiles/test.util
 # Utility command for edit_cache
 
 build lib/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -197,7 +197,7 @@ build lib/googletest/edit_cache: phony lib/googletest/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build lib/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/alfonso/Escritorio/PruebaTecnica -B/home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/alfonso/Escritorio/PruebaTecnica -B/home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -215,7 +215,7 @@ build lib/googletest/list_install_components: phony
 # Utility command for install
 
 build lib/googletest/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest/all
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -227,7 +227,7 @@ build lib/googletest/install: phony lib/googletest/CMakeFiles/install.util
 # Utility command for install/local
 
 build lib/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest/all
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -239,7 +239,7 @@ build lib/googletest/install/local: phony lib/googletest/CMakeFiles/install/loca
 # Utility command for install/strip
 
 build lib/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest/all
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -320,7 +320,7 @@ build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug lib/googl
 # Utility command for test
 
 build lib/googletest/googlemock/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googlemock && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googlemock && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -332,7 +332,7 @@ build lib/googletest/googlemock/test: phony lib/googletest/googlemock/CMakeFiles
 # Utility command for edit_cache
 
 build lib/googletest/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googlemock && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googlemock && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -343,7 +343,7 @@ build lib/googletest/googlemock/edit_cache: phony lib/googletest/googlemock/CMak
 # Utility command for rebuild_cache
 
 build lib/googletest/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googlemock && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/alfonso/Escritorio/PruebaTecnica -B/home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googlemock && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/alfonso/Escritorio/PruebaTecnica -B/home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -361,7 +361,7 @@ build lib/googletest/googlemock/list_install_components: phony
 # Utility command for install
 
 build lib/googletest/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest/googlemock/all
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googlemock && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googlemock && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -373,7 +373,7 @@ build lib/googletest/googlemock/install: phony lib/googletest/googlemock/CMakeFi
 # Utility command for install/local
 
 build lib/googletest/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest/googlemock/all
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googlemock && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googlemock && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -385,7 +385,7 @@ build lib/googletest/googlemock/install/local: phony lib/googletest/googlemock/C
 # Utility command for install/strip
 
 build lib/googletest/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest/googlemock/all
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googlemock && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googlemock && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -466,7 +466,7 @@ build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug lib/googl
 # Utility command for test
 
 build lib/googletest/googletest/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
@@ -478,7 +478,7 @@ build lib/googletest/googletest/test: phony lib/googletest/googletest/CMakeFiles
 # Utility command for edit_cache
 
 build lib/googletest/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -489,7 +489,7 @@ build lib/googletest/googletest/edit_cache: phony lib/googletest/googletest/CMak
 # Utility command for rebuild_cache
 
 build lib/googletest/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/alfonso/Escritorio/PruebaTecnica -B/home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/alfonso/Escritorio/PruebaTecnica -B/home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -507,7 +507,7 @@ build lib/googletest/googletest/list_install_components: phony
 # Utility command for install
 
 build lib/googletest/googletest/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest/googletest/all
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -519,7 +519,7 @@ build lib/googletest/googletest/install: phony lib/googletest/googletest/CMakeFi
 # Utility command for install/local
 
 build lib/googletest/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest/googletest/all
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -531,7 +531,7 @@ build lib/googletest/googletest/install/local: phony lib/googletest/googletest/C
 # Utility command for install/strip
 
 build lib/googletest/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest/googletest/all
-  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/lib/googletest/googletest && /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -595,14 +595,14 @@ build lib/googletest/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDependentOption.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CheckIncludeFile.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CheckLibraryExists.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindOpenSSL.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPkgConfig.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPython.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPython/Support.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindThreads.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/GNUInstallDirs.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake /home/alfonso/Escritorio/PruebaTecnica/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googlemock/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googlemock/cmake/gmock.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googlemock/cmake/gmock_main.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/Config.cmake.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/gtest.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/gtest_main.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDependentOption.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CheckIncludeFile.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CheckLibraryExists.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindOpenSSL.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPkgConfig.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPython.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPython/Support.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindThreads.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/GNUInstallDirs.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake /home/alfonso/Escritorio/PruebaTecnica/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googlemock/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googlemock/cmake/gmock.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googlemock/cmake/gmock_main.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/Config.cmake.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/gtest.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/gtest_main.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDependentOption.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CheckIncludeFile.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/CheckLibraryExists.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindOpenSSL.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPkgConfig.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPython.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPython/Support.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindThreads.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/GNUInstallDirs.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/linux/x64/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake /home/alfonso/Escritorio/PruebaTecnica/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googlemock/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googlemock/cmake/gmock.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googlemock/cmake/gmock_main.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/Config.cmake.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/gtest.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/gtest_main.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
+build /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDependentOption.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CheckIncludeFile.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/CheckLibraryExists.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindOpenSSL.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPkgConfig.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPython.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPython/Support.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindThreads.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/GNUInstallDirs.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /home/alfonso/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake /home/alfonso/Escritorio/PruebaTecnica/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googlemock/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googlemock/cmake/gmock.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googlemock/cmake/gmock_main.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/CMakeLists.txt /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/Config.cmake.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/gtest.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/gtest_main.pc.in /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
 
 
 #############################################
