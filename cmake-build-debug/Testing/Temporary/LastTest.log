@@ -1,14 +1,14 @@
-Start testing: May 21 20:26 CEST
+Start testing: May 22 20:25 CEST
 ----------------------------------------------------------
 1/1 Testing: UnitTests
 1/1 Test: UnitTests
 Command: "/home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug/runUnitTests"
 Directory: /home/alfonso/Escritorio/PruebaTecnica/cmake-build-debug
-"UnitTests" start time: May 21 20:26 CEST
+"UnitTests" start time: May 22 20:25 CEST
 Output:
 ----------------------------------------------------------
 Running main() from /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/src/gtest_main.cc
-[==========] Running 11 tests from 2 test suites.
+[==========] Running 12 tests from 3 test suites.
 [----------] Global test environment set-up.
 [----------] 7 tests from Bloque1
 [ RUN      ] Bloque1.Ejercicio1
@@ -18,35 +18,40 @@ Running main() from /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/google
 [ RUN      ] Bloque1.Ejercicio3
 [       OK ] Bloque1.Ejercicio3 (0 ms)
 [ RUN      ] Bloque1.Ejercicio4
-[       OK ] Bloque1.Ejercicio4 (238 ms)
+[       OK ] Bloque1.Ejercicio4 (141 ms)
 [ RUN      ] Bloque1.Ejercicio5
 [       OK ] Bloque1.Ejercicio5 (0 ms)
 [ RUN      ] Bloque1.Ejercicio7
-[       OK ] Bloque1.Ejercicio7 (9 ms)
+[       OK ] Bloque1.Ejercicio7 (43 ms)
 [ RUN      ] Bloque1.Ejercicio8
-[       OK ] Bloque1.Ejercicio8 (540 ms)
-[----------] 7 tests from Bloque1 (800 ms total)
+[       OK ] Bloque1.Ejercicio8 (455 ms)
+[----------] 7 tests from Bloque1 (654 ms total)
 
 [----------] 4 tests from Bloque2
 [ RUN      ] Bloque2.Ejercicio1
 [       OK ] Bloque2.Ejercicio1 (0 ms)
 [ RUN      ] Bloque2.Ejercicio2
-[       OK ] Bloque2.Ejercicio2 (57 ms)
+[       OK ] Bloque2.Ejercicio2 (11 ms)
 [ RUN      ] Bloque2.Ejercicio3
-[       OK ] Bloque2.Ejercicio3 (16 ms)
+[       OK ] Bloque2.Ejercicio3 (1 ms)
 [ RUN      ] Bloque2.Ejercicio5
 [       OK ] Bloque2.Ejercicio5 (0 ms)
-[----------] 4 tests from Bloque2 (130 ms total)
+[----------] 4 tests from Bloque2 (24 ms total)
+
+[----------] 1 test from Bloque3
+[ RUN      ] Bloque3.Ejercicio1
+[       OK ] Bloque3.Ejercicio1 (0 ms)
+[----------] 1 test from Bloque3 (4 ms total)
 
 [----------] Global test environment tear-down
-[==========] 11 tests from 2 test suites ran. (937 ms total)
-[  PASSED  ] 11 tests.
+[==========] 12 tests from 3 test suites ran. (697 ms total)
+[  PASSED  ] 12 tests.
 <end of output>
-Test time =   0.97 sec
+Test time =   0.73 sec
 ----------------------------------------------------------
 Test Passed.
-"UnitTests" end time: May 21 20:26 CEST
+"UnitTests" end time: May 22 20:26 CEST
 "UnitTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: May 21 20:26 CEST
+End testing: May 22 20:26 CEST

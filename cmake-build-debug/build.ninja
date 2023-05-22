@@ -70,6 +70,13 @@ build CMakeFiles/runUnitTests.dir/src/Bloque2.cpp.o: CXX_COMPILER__runUnitTests_
   OBJECT_DIR = CMakeFiles/runUnitTests.dir
   OBJECT_FILE_DIR = CMakeFiles/runUnitTests.dir/src
 
+build CMakeFiles/runUnitTests.dir/src/Bloque3.cpp.o: CXX_COMPILER__runUnitTests_Debug /home/alfonso/Escritorio/PruebaTecnica/src/Bloque3.cpp || cmake_object_order_depends_target_runUnitTests
+  DEP_FILE = CMakeFiles/runUnitTests.dir/src/Bloque3.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  INCLUDES = -isystem /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest/include -isystem /home/alfonso/Escritorio/PruebaTecnica/lib/googletest/googletest
+  OBJECT_DIR = CMakeFiles/runUnitTests.dir
+  OBJECT_FILE_DIR = CMakeFiles/runUnitTests.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target runUnitTests
@@ -78,7 +85,7 @@ build CMakeFiles/runUnitTests.dir/src/Bloque2.cpp.o: CXX_COMPILER__runUnitTests_
 #############################################
 # Link the executable runUnitTests
 
-build runUnitTests: CXX_EXECUTABLE_LINKER__runUnitTests_Debug CMakeFiles/runUnitTests.dir/test/Test.cpp.o CMakeFiles/runUnitTests.dir/src/Bloque1.cpp.o CMakeFiles/runUnitTests.dir/src/Bloque2.cpp.o | /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+build runUnitTests: CXX_EXECUTABLE_LINKER__runUnitTests_Debug CMakeFiles/runUnitTests.dir/test/Test.cpp.o CMakeFiles/runUnitTests.dir/src/Bloque1.cpp.o CMakeFiles/runUnitTests.dir/src/Bloque2.cpp.o CMakeFiles/runUnitTests.dir/src/Bloque3.cpp.o | /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libssl.so  /usr/lib/x86_64-linux-gnu/libcrypto.so  lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lpthread
   OBJECT_DIR = CMakeFiles/runUnitTests.dir

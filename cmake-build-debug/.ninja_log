@@ -1,18 +1,16 @@
 # ninja log v5
 29	369	1684692305209767470	lib/libgmock.a	63426a4aec058476
 20	743	1684509075784601252	lib/libgtest.a	b56b3de75e445b5
-8	2688	1684692307577681085	CMakeFiles/runUnitTests.dir/test/Test.cpp.o	760e100a76a48ce7
-13	277	1684693571200948422	build.ninja	f21002c631bd3c87
+1	1609	1684779872475389236	CMakeFiles/runUnitTests.dir/test/Test.cpp.o	760e100a76a48ce7
+13	277	1684779912774891556	build.ninja	f21002c631bd3c87
 3619	4535	1683892491954930069	lib/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o	bf3a0203f68c19af
 9280	10109	1683892497530735228	lib/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	f39bc9512d21def9
 34	706	1684576047661797746	CMakeFiles/runUnitTests.dir/src/p1.cpp.o	7caea3e1dfcd6b13
 370	396	1684692305209767470	lib/libgmock_main.a	deb81b0a3f4b0d0e
-3563	4097	1684692702495480520	runUnitTests	b5461236b569e982
+1609	2082	1684779872955334157	runUnitTests	377be9e22a278834
 4535	9196	1683892496618767094	lib/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	f5157f1eec631e8f
 744	765	1684509075800600581	lib/libgtest_main.a	25a6c9aa5049c11a
+25	552	1684779837975446582	CMakeFiles/runUnitTests.dir/src/Bloque3.cpp.o	7a2243c5bfa5d04
 1591	3617	1683892491038962080	lib/googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o	fddad5b19b2e77a0
-1	3563	1684692701963499435	CMakeFiles/runUnitTests.dir/src/Bloque2.cpp.o	b3db5f5445f19be
+16	1026	1684779838447389747	CMakeFiles/runUnitTests.dir/src/Bloque2.cpp.o	b3db5f5445f19be
 2	1504	1684509076552569042	CMakeFiles/runUnitTests.dir/src/Bloque1.cpp.o	a62f5c778512946
-28	1075	1684693580248632577	CMakeFiles/runUnitTests.dir/src/Bloque2.cpp.o	b3db5f5445f19be
-2	2859	1684693582296561091	CMakeFiles/runUnitTests.dir/test/Test.cpp.o	760e100a76a48ce7
-2877	3939	1684693583412522129	runUnitTests	b5461236b569e982

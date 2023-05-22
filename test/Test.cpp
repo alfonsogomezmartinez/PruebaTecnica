@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include "../src/Bloque1.hpp"
 #include "../src/Bloque2.hpp"
+#include "../src/Bloque3.hpp"
 
 TEST(Bloque1, Ejercicio1){
     string in = "49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d";
@@ -105,4 +106,13 @@ TEST(Bloque2, Ejercicio5){
     string out = "email=eeeeeeeeeeeemail@attacker.com&uid=10&role=admin";
 
     EXPECT_EQ(out, createAdminProfile(in));
+}
+
+TEST(Bloque3, Ejercicio1){
+    string in = "L77na/nrFsKvynd6HzOoG7GHTLXsTVu9qvY/2syLXzhPweyyMTJULu/6/kXX0KSvoOLSFQ==";
+    string decode_in = base64_decode(in);
+    vector<unsigned char> nonce(16, 0);
+    string out = "Yo, VIP Let's kick it Ice, Ice, baby Ice, Ice, baby ";
+
+    EXPECT_EQ(out, aes_ctr_encrypt(GLOBALKEY, nonce, decode_in));
 }
