@@ -111,7 +111,6 @@ char FindKey(const string& in) {
     int maxScore = 0;
     vector<unsigned char> bytes = StringHexToBytes(in);
 
-
     for (int i = 0; i < 256; ++i) {
 
         string xoredBytes = XORCharacter(bytes, i);

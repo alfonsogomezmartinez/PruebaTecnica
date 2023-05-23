@@ -108,11 +108,24 @@ TEST(Bloque2, Ejercicio5){
     EXPECT_EQ(out, createAdminProfile(in));
 }
 
-TEST(Bloque3, Ejercicio1){
+TEST(Bloque3, Ejercicio2){
     string in = "L77na/nrFsKvynd6HzOoG7GHTLXsTVu9qvY/2syLXzhPweyyMTJULu/6/kXX0KSvoOLSFQ==";
     string decode_in = base64_decode(in);
     vector<unsigned char> nonce(16, 0);
     string out = "Yo, VIP Let's kick it Ice, Ice, baby Ice, Ice, baby ";
 
     EXPECT_EQ(out, aes_ctr_encrypt(GLOBALKEY, nonce, decode_in));
+}
+
+TEST(Bloque3, Ejercicio4){
+    string in = "../test/Bloque3Ejercicio4.txt";
+    string expect = "../test/expectBloque3Ejercicio4.txt";
+    ifstream file(expect);
+    string out, datafile;
+    if (file.is_open()) {
+        getline(file, datafile, '\0');
+        out.append(datafile);
+
+    }
+    EXPECT_EQ(out, attack_ctr(in));
 }
